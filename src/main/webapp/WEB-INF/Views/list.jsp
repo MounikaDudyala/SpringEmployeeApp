@@ -30,12 +30,8 @@ table, th, td {
 			<td><c:out value="${employee.getFirstName()}"></c:out></td>
 			<td><c:out value="${employee.getLastName()}"></c:out></td>
 			<td><c:out value="${employee.getManagerId()}"></c:out></td>
-	    <td>
-        <a href="delete?empId=${employee.getEmployeeId()}">delete </a>
-        </td>
-        <td>
-        <a href="edit?empId=${employee.getEmployeeId()}">edit </a>       
-        </td>
+        <td><a href="delete?empId=${employee.getEmployeeId()}">delete</a></td>
+        <td><a href="edit?empId=${employee.getEmployeeId()}">edit</a></td>
 	</tr>
    </c:forEach>
 </table>
