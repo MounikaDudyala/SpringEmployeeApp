@@ -1,4 +1,5 @@
 package com.mounika.springemployeeapp.dao.impl;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -77,7 +78,6 @@ public class EmployeeDaoImpl extends AbstractDBConnection implements EmployeeDao
 				emp.setLastName(rs.getString(3));
 				emp.setManagerId(rs.getString(4));
 				list.add(emp);
-
 			}
 
 			return list;
@@ -102,7 +102,6 @@ public class EmployeeDaoImpl extends AbstractDBConnection implements EmployeeDao
 				return true;
 			if (i == 0)
 				return false;
-
 		} catch (SQLException e) {
 			System.out.println("SQLException caught: " + e.getMessage());
 		} catch (Exception e) {
