@@ -25,7 +25,7 @@ table, th, td {
 		<th>ManagerID</th>
 	</tr>
 	<c:forEach var="employee" items="${employeeList}">
-		<tr>
+	<tr>
 			<td><c:out value="${employee.getEmployeeId()}"></c:out></td>
 			<td><c:out value="${employee.getFirstName()}"></c:out></td>
 			<td><c:out value="${employee.getLastName()}"></c:out></td>
@@ -36,8 +36,8 @@ table, th, td {
         <td>
         <a href="edit?empId=${employee.getEmployeeId()}">edit </a>       
         </td>
-	 </tr>
-	</c:forEach>
+	</tr>
+   </c:forEach>
 </table>
 </body>
 </html>
